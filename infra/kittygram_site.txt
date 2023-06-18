@@ -1,0 +1,5 @@
+IP: 130.193.55.60;
+name_taski: https://;
+name_kittygram: https://khamakittygram.zapto.org;
+login: khamaran;
+password: Tomnam1997!;
