@@ -32,17 +32,13 @@ server {
         return 301 https://$host$request_uri;
     } # managed by Certbot
 
-
-
     listen 80;
 
     server_name 62.84.120.52 khamakittygram.zapto.org;
     return 404; # managed by Certbot
 
-
 }
 
-    
 server {
 
     server_name 62.84.120.52 khamataski.didns.ru;
@@ -61,8 +57,6 @@ server {
         try_files $uri /index.html;
     }
 
-
-
     listen 443 ssl; # managed by Certbot
     ssl_certificate /etc/letsencrypt/live/khamataski.didns.ru/fullchain.pem; # managed by >
     ssl_certificate_key /etc/letsencrypt/live/khamataski.didns.ru/privkey.pem; # managed b>
@@ -71,17 +65,13 @@ server {
 
 }
 
-
 server {
     if ($host = khamataski.didns.ru) {
         return 301 https://$host$request_uri;
     } # managed by Certbot
 
-
-
     server_name 62.84.120.52 khamataski.didns.ru;
     listen 80;
     return 404; # managed by Certbot
-
 
 }

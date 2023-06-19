@@ -1,4 +1,5 @@
 import os
+
 from dotenv import load_dotenv
 from pathlib import Path
 
@@ -11,7 +12,7 @@ SECRET_KEY = os.getenv('SECRET_KEY')
 
 DEBUG = False
 
-ALLOWED_HOSTS = ['62.84.120.52', '127.0.0.1', 'localhost', 'khamakittygram.zapto.org']
+ALLOWED_HOSTS = os.getenv("ALLOWED_HOSTS").split(' ')
 
 INSTALLED_APPS = [
     'django.contrib.admin',
